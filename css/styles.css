@@ -351,9 +351,7 @@ focus and hover */
 
   fill: #afb1b8;
 }
-.social-icon {
-  fill: #afb1b8;
-}
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
