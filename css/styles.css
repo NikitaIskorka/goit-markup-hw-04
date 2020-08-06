@@ -61,19 +61,27 @@ focus and hover */
 .site-nav :focus {
   color: var(--accent-color);
 }
-.current-link::after {
-  content: "";
-  display: flex;
-
-  height: 4px;
-
-  background: #2196f3;
-  border-radius: 2px;
+.site-nav .item {
+  position: relative;
 }
 .current-link {
   color: var(--accent-color);
 }
 
+.current-link::after {
+  content: "";
+  display: flex;
+
+  position: absolute;
+  left: 0px;
+  top: 40px;
+
+  height: 4px;
+  width: 100%;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
 /* Nsv contsiner */
 .navigation-container {
   display: flex;
@@ -541,7 +549,8 @@ focus and hover */
   letter-spacing: 0.03em;
 }
 
-.filter-name:hover {
+.filter-name:hover,
+.filter-name:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
