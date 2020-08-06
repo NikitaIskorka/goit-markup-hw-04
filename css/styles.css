@@ -260,32 +260,41 @@ focus and hover */
   margin-top: 10px;
 }
 /* OUR WORKS */
-.works-list {
-  display: flex;
-}
-.works-item {
-  position: relative;
-}
-.works-item + .works-item {
-  margin-left: 30px;
-}
 
 /* works title */
 .works .title {
-  margin-bottom: 0px;
-  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
-/* Works exmples */
-.works .list {
-  margin-top: 50px;
+/* WORK EXAMPLLES LIST */
+
+.work-examples {
+  display: flex;
 }
 
-.work-image {
+/* wORK CARD  */
+.work-item {
+  position: relative;
 }
+.work-item + .work-item {
+  margin-left: 30px;
+}
+/* WORK IMAGE */
 
-/* our works picture dsc */
+/* WORK DESCRIPTION */
 .work-name {
   position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  bottom: 0px;
+
+  width: 370px;
+  height: 70px;
+
+  margin: 0px;
 
   font-weight: 700;
   font-size: 14px;
@@ -293,7 +302,11 @@ focus and hover */
 
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
+
 /* team */
 .team {
   background-color: #f5f4fa;
